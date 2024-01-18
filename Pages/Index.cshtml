@@ -1,0 +1,22 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+    var order = OrderDetails.GetAllRecords();
+    var type = typeof(OrderDetails);
+}
+
+<ejs-grid id="Grid" tvalue="@type" dataSource="@order" allowPaging="true">
+    <e-grid-pagesettings pageSize="10"></e-grid-pagesettings>
+    <e-grid-editsettings allowEditing="true"></e-grid-editsettings>
+   @* <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="120"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer Name" width="150"></e-grid-column>
+        <e-grid-column field="OrderDate" headerText=" Order Date" format="yMd" width="130"
+                       textAlign="Right"></e-grid-column>
+        <e-grid-column field="Freight" headerText="Freight" format="C2" width="120"
+                       textAlign="Right"></e-grid-column>
+        <e-grid-column field="ShipCity" headerText="Ship City" width="150"></e-grid-column>
+    </e-grid-columns>*@
+</ejs-grid>
+
