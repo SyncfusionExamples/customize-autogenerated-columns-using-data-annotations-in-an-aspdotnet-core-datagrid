@@ -2,7 +2,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
-Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("Mgo+DSMBMAY9C3t2UVhhQlVBfV1dWnxLflFyVWJYdVtyflBEcDwsT3RfQFljSH9TdkFhXX5ddXdVQA==");
+Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("Enter your license");
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
